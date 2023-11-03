@@ -31,6 +31,18 @@ def writeups():
     conn.close()
     return render_template('writeups.html', writeups=writeups)
 
+@app.route('/ssti')
+def show_ssti():
+    conn = sqlite3.connect('project.db')
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM ssti")
+    ssti_payloads = cursor.fetchall()
+    conn.close()
+    print(ssti_payloads)  # Добавлен для отладки
+    return render_template('ssti.html', ssti_payloads=ssti_payloads)
+
+
+
 if __name__ == '__main__':
 
     app.run(debug=True)

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SSTI Payloads</title>
+        <link type="text/css" rel="stylesheet" href="../static/style.css">
+    <style>
+        table {
+            width: 100%;
+            table-layout: fixed; /* Это также помогает предотвратить растягивание таблицы */
+        }
+        td, th {
+            word-wrap: break-word;
+            max-width: 1600px;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Server Side Template Injection Payloads</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Payload</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for payload in ssti_payloads %}
+            <tr>
+                <td>{{ payload[1] }}</td>
+                <td class="payload-data">{{ payload[2] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

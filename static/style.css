@@ -31,6 +31,7 @@
     --fore-color-2: rgb(202, 124, 255);
     --fore-color-3: rgb(92, 233, 255);
     --fore-color-4: rgb(255, 209, 92);
+    --fore-color-5: rgb(246, 74, 138);
     --bloom-filter: drop-shadow(0 0 5px var(--fore-color));
 }
 
@@ -149,7 +150,7 @@ thead {
     display: none;
 }
 .payload-data {
-    color: var(--fore-color-2);
+    color: var(--fore-color-5);
 }
 .bg-home {
 

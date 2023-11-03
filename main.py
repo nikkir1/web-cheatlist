@@ -21,8 +21,7 @@ def home():
 def show_sql_injections():
     rows = query_db('SELECT * FROM sql')
     return render_template('sql.html', sql_injections=rows)
-git config --global user.email "nik_kir16@mail.ru"
-git config --global user.name "nik_kir1
+
 @app.route('/writeups')
 def writeups():
     conn = sqlite3.connect('project.db')

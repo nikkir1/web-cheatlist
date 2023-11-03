@@ -191,3 +191,21 @@ thead {
     align-items: center; /* Центрируем контент по горизонтали */
     justify-content: center; /* Центрируем контент по вертикали */
 }
+
+.bg-ssti {
+    background-image: url('./images/126.png'); /* Update the path as needed */
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 200vh;
+    color: var(--fore-color-2);
+    font-family: 'PixelFont';
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 4vw;
+    margin: 0;
+    filter: var(--bloom-filter);
+    display: flex; /* Используем flexbox */
+    flex-direction: column;
+    align-items: center; /* Центрируем контент по горизонтали */
+    justify-content: center; /* Центрируем контент по вертикали */
+}

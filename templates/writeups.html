@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../static/style.css">
+</head>
+<body class="bg-writeups">
+<h1>Writeups</h1>
+<div class="container">
+    <ul>
+        {% for writeup in writeups %}
+        <li><a style="color: rgb(92, 233, 255);" href="{{ writeup[1] }}" target="_blank">{{ writeup[1] }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>

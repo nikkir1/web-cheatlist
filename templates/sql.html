@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Exploits</title>
+    <link type="text/css" rel="stylesheet" href="../static/style.css">
+</head>
+<body class="bg-sql">
+
+    <h1>SQL Exploits</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Payload</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for exploit in sql_injections %}
+            <tr>
+                <td>{{ exploit[1] }}</td>
+                <td class="payload-data">{{ exploit[2] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
